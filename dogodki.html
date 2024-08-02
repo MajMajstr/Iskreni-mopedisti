@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iskreni mopedisti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Navbar section -->
+    
+    <nav class="navbar">
+        
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="navbar__menu">
+            <a href="/index.html" class="navbar__link">Domov</a>
+            <a href="/dogodki.html" class="navbar__link">Dogodki</a>
+            <a href="/galerija.html" class="navbar__link">Galerija</a>
+            <a href="/voznipark.html" class="navbar__link">Vozni park</a>
+            <a href="/onas.html" class="navbar__link">O nas</a>
+        </div>
+    </nav>
+    <!-- <a href="/" class="navbar__logo"><img src="logo.jpeg" alt="pic" id="main__img"></a> -->
+    <!-- Hero section -->
+    <div class="dogodki">
+        <div class="boks">
+            <h1>Prihajajoči dogodki</h1><br>
+            <h2>6. Srečanje starodobnih mopedov</h2><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit.</p><br>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="gumb">Prijava na dogodek</button>
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none' " class="close" title="Close Modal">&times;</span>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    
+                    <div class="modal-container">
+                        <h1>Prijava na dogodek</h1>
+                        <hr>
+                        <input type="hidden" name="subject" value="Prijava na dogodek">
+                        <input type="hidden" name="access_key" value="04548fd6-9c63-4a45-a306-fe9a653d159c">
+                        
+
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" id="email" placeholder="Vnesite Email" name="email" required>
+
+                        <label for="dogodek"><b>Dogodek</b></label>
+                        <input type="text" id="dogodek" placeholder="Ime dogodka" name="dogodek" required>
+
+                        <label for="ime"><b>Ime in priimek</b></label>
+                        <input type="text" id="ime" placeholder="ime in priimek" name="ime" required>
+
+                        <label for="datum_prihod"><b>Prihod </b></label>
+                        <input class="izbira_datuma" id="datum_prihod" type="date" name="Datum prihoda" required>
+
+                        <label for="datum_odhod">Odhod</label>
+                        <input class="izbira_datuma" id="datum_odhod" type="date" name="Datum odhoda" required>
+
+                        <button type="submit" class="signupbtn">Prijava</button>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="boks">
+            <img src="slideshow images/pic1.jpeg">
+        </div>
+    </div>
+    <!--footer section-->
+    <div class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__desc">
+                <h1>Društvo starodobnih vozil ISKRENI MOPEDISTI</h1>
+                <p id="email">iskreni.mopedisti@gmail.com</p>
+            </div>
+            <div class="footer__links">
+                <a href="/onas.html" class="linki">Kontakt</a>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjAhruks7qEAxVq-AIHHU1CDWIQFnoECBYQAQ&url=https%3A%2F%2Fm.facebook.com%2Fp%2FDru%25C5%25A1tvo-starodobnih-vozil-ISKRENI-MOPEDISTI-100063647493163%2F&usg=AOvVaw0pKtYywxrixmlZRT-FBauH&opi=89978449" class="linki">Facebook</a>
+                <a href="https://www.instagram.com/iskrenimopedisti?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="linki">Instagram</a>
+    
+            </div>
+        </div>
+    </div>
+    <script src = "app.js"></script>
+
+
+</body>
+</html>
